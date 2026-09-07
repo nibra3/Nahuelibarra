@@ -1,0 +1,90 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.hero {
+  padding-top: v.$espacio-grande;
+  padding-bottom: v.$espacio-grande;
+
+  @include m.desktop {
+    padding-top: v.$espacio-xl;
+    padding-bottom: v.$espacio-xl;
+  }
+
+  .contenedor {
+    @include m.flex($direccion: column, $espacio: v.$espacio-grande);
+
+    @include m.desktop {
+      flex-direction: row;
+      align-items: center;
+      gap: v.$espacio-xl;
+    }
+  }
+}
+
+.hero__texto {
+  @include m.desktop {
+    flex: 0 0 46%;
+  }
+}
+
+.hero__nombre {
+  font-family: v.$font-display;
+  color: v.$color-hueso;
+  font-size: 42px;
+  line-height: 1.05;
+  margin-bottom: 6px;
+
+  @include m.tablet {
+    font-size: 54px;
+  }
+
+  @include m.desktop {
+    font-size: 60px;
+  }
+}
+
+.hero__rol {
+  font-family: v.$font-titulos;
+  color: v.$color-brasa;
+  font-size: 16px;
+  letter-spacing: .5px;
+  margin-bottom: v.$espacio-medio;
+}
+
+.hero__bio {
+  color: v.$color-texto-suave;
+  font-size: 17px;
+  margin-bottom: v.$espacio-grande;
+}
+
+.hero__acciones {
+  @include m.flex($direccion: column, $espacio: 14px);
+
+  @include m.tablet {
+    flex-direction: row;
+  }
+}
+
+.hero__imagen {
+  position: relative;
+
+  @include m.desktop {
+    flex: 0 0 46%;
+  }
+
+  .marco {
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto;
+    transform: rotate(-2deg);
+
+    img {
+      border: 6px solid v.$color-hueso;
+      box-shadow: 14px 14px 0 v.$color-sangre;
+    }
+
+    @include m.desktop {
+      max-width: 100%;
+    }
+  }
+}

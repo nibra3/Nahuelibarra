@@ -1,0 +1,29 @@
+@use '../utilities/variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+body {
+  font-family: v.$font-principal;
+  color: v.$color-hueso;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4 {
+  font-family: v.$font-titulos;
+  line-height: 1.15;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1em;
+  max-width: 62ch;
+}
+
+a {
+  color: inherit;
+}
+
+.logotipo {
+  font-family: v.$font-display;
+  letter-spacing: .5px;
+}

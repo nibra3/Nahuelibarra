@@ -1,0 +1,116 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  @media (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: v.$color-tinta;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid v.$color-brasa;
+  outline-offset: 3px;
+}
+
+.salto-contenido {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: v.$color-hueso;
+  color: v.$color-texto-oscuro;
+  padding: 10px 16px;
+  z-index: 999;
+
+  &:focus {
+    left: v.$espacio-medio;
+    top: v.$espacio-medio;
+  }
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 v.$espacio-medio;
+
+  @include m.desktop {
+    padding: 0 v.$espacio-grande;
+  }
+}
+
+section {
+  padding: v.$espacio-xl 0;
+}
+
+.seccion--clara {
+  background-color: v.$color-hueso;
+  color: v.$color-texto-oscuro;
+
+  p {
+    color: v.$color-texto-oscuro;
+  }
+}
+
+.etiqueta {
+  display: inline-block;
+  font-family: v.$font-titulos;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: v.$color-brasa;
+  margin-bottom: v.$espacio-chico;
+}
+
+.seccion--clara .etiqueta {
+  color: v.$color-sangre;
+}
+
+.titulo-seccion {
+  font-size: 28px;
+  color: v.$color-hueso;
+  max-width: 20ch;
+  margin-bottom: v.$espacio-medio;
+
+  @include m.desktop {
+    font-size: 34px;
+  }
+}
+
+.seccion--clara .titulo-seccion {
+  color: v.$color-texto-oscuro;
+}
+
+.intro-seccion {
+  color: v.$color-texto-suave;
+  font-size: 16px;
+  margin-bottom: v.$espacio-grande;
+}
+
+.seccion--clara .intro-seccion {
+  color: #5a5540;
+}
+
+.cierre-cta {
+  text-align: center;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

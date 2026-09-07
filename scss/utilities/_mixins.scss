@@ -1,0 +1,37 @@
+@use 'variables' as v;
+
+@mixin breakpoint($ancho: v.$punto-escritorio) {
+  @media screen and (min-width: $ancho) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include breakpoint(v.$punto-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include breakpoint(v.$punto-escritorio) {
+    @content;
+  }
+}
+
+@mixin flex($direccion: row, $justificar: flex-start, $alinear: stretch, $espacio: null) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $justificar;
+  align-items: $alinear;
+
+  @if $espacio {
+    gap: $espacio;
+  }
+}
+
+// Reduced motion: envuelve cualquier bloque de animación/transición
+@mixin motion-ok {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}

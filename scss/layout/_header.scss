@@ -1,0 +1,32 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.navbar-custom {
+  background-color: v.$color-tinta;
+  border-bottom: 1px solid rgba(v.$color-hueso, .08);
+  padding: 16px v.$espacio-medio;
+
+  .brand-nombre {
+    font-family: v.$font-display;
+    color: v.$color-hueso;
+    font-size: 22px;
+    letter-spacing: .5px;
+  }
+
+  .brand-rol {
+    display: block;
+    color: v.$color-texto-suave;
+    font-family: v.$font-titulos;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+  }
+
+  @include m.desktop {
+    padding: 18px v.$espacio-grande;
+
+    .brand-nombre {
+      font-size: 26px;
+    }
+  }
+}

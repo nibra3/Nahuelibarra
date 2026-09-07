@@ -1,0 +1,91 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.proyecto {
+  border: 1px solid rgba(v.$color-hueso, .12);
+  border-radius: v.$radio-medio;
+  overflow: hidden;
+
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}
+
+.proyecto__visual {
+  background-color: v.$color-hueso-suave;
+  padding: v.$espacio-grande;
+  @include m.flex($justificar: center, $alinear: center);
+
+  img {
+    max-height: 340px;
+    width: auto;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, .18);
+  }
+}
+
+.proyecto__cuerpo {
+  padding: v.$espacio-grande;
+
+  h3 {
+    color: v.$color-hueso;
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .proyecto__rol {
+    color: v.$color-brasa;
+    font-family: v.$font-titulos;
+    font-size: 13px;
+    letter-spacing: .5px;
+    margin-bottom: v.$espacio-medio;
+  }
+
+  p {
+    color: v.$color-texto-suave;
+    font-size: 15px;
+  }
+}
+
+.stack {
+  list-style: none;
+  @include m.flex($espacio: 8px);
+  flex-wrap: wrap;
+  margin: v.$espacio-medio 0 v.$espacio-grande;
+
+  li {
+    font-family: v.$font-titulos;
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: v.$color-musgo;
+    border: 1px solid v.$color-musgo;
+    border-radius: v.$radio-chico;
+    padding: 4px 10px;
+  }
+}
+
+.proyecto__acciones {
+  @include m.flex($espacio: 12px);
+  flex-wrap: wrap;
+}
+
+.tareas-lista {
+  list-style: none;
+  margin-top: v.$espacio-medio;
+
+  li {
+    color: v.$color-texto-suave;
+    font-size: 15px;
+    padding-left: 18px;
+    position: relative;
+    margin-bottom: 8px;
+
+    &::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: v.$color-brasa;
+    }
+  }
+}

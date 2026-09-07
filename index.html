@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahuel Ibarra — Ilustrador y desarrollador frontend</title>
+    <meta name="description" content="Portfolio de Nahuel Ibarra: ilustración de personajes y afiches para la escena del rock y el metal, y desarrollo web frontend. Buenos Aires, Argentina.">
+    <link rel="icon" type="image/png" href="img/ilustracion/mascara-eddie.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<a class="salto-contenido" href="#contenido">Ir al contenido</a>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-column lh-1" href="index.html">
+                <span class="brand-nombre logotipo">Nahuel Ibarra</span>
+                <span class="brand-rol">ILUSTRACIÓN &amp; DISEÑO WEB</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/ilustracion.html">Ilustración</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/diseno-web.html">Diseño web</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="contenedor">
+            <div class="hero__texto">
+                <p class="hero__rol">Buenos Aires, Argentina</p>
+                <h1 class="hero__nombre logotipo">Nahuel Ibarra</h1>
+                <p class="hero__bio">
+                    Dibujo criaturas, calaveras e iconografía de recital, y estoy formándome como
+                    desarrollador frontend en la Facultad de Diseño y Comunicación de la UP.
+                    Me gusta construir las dos cosas con las manos: el papel y el código.
+                </p>
+                <div class="hero__acciones">
+                    <a href="paginas/ilustracion.html" class="boton boton--relleno">Ver ilustración <span class="boton__flecha">→</span></a>
+                    <a href="paginas/diseno-web.html" class="boton">Ver diseño web <span class="boton__flecha">→</span></a>
+                </div>
+            </div>
+            <div class="hero__imagen">
+                <div class="marco">
+                    <img class="zoomable" src="img/ilustracion/jester-calavera.jpg" alt="Ilustración de una calavera con capucha de bufón y collar de perlas, obra de Nahuel Ibarra">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVEDAD: WEEDSTERMAN -->
+    <section class="seccion--clara">
+        <div class="contenedor destacado">
+            <div class="destacado__imagen">
+                <img class="zoomable" src="img/ilustracion/weedsterman.jpg" alt="Weedsterman, ilustración a color con personajes de estética psicodélica y de dibujo animado callejero">
+            </div>
+            <div class="destacado__texto">
+                <span class="marca-novedad">Lo último</span>
+                <h2 class="titulo-seccion">Weedsterman</h2>
+                <p>
+                    Una escena coral en clave psicodélica: personajes de dibujo animado, humor callejero
+                    y una paleta saturada que se aleja del blanco y negro de mis piezas más "metaleras".
+                    Es la ilustración más reciente que terminé y la que más se estiró en proceso.
+                </p>
+                <a href="paginas/ilustracion.html#weedsterman" class="boton">Ver el detalle <span class="boton__flecha">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EN QUÉ TRABAJO -->
+    <section>
+        <div class="contenedor">
+            <span class="etiqueta">En qué trabajo</span>
+            <h2 class="titulo-seccion">Dos oficios, un mismo cuaderno de bocetos</h2>
+            <p class="intro-seccion">Ilustro para la escena del rock y el metal, y armo sitios web prolijos y responsivos.</p>
+            <div class="disciplinas">
+                <a href="paginas/ilustracion.html" class="disciplina">
+                    <h3>Ilustración</h3>
+                    <p>
+                        Personajes, criaturas y afiches en tinta y color digital, con referencias directas
+                        al heavy metal, el terror clásico y la cultura de recital.
+                    </p>
+                    <span class="disciplina__link">Ver galería →</span>
+                </a>
+                <a href="paginas/diseno-web.html" class="disciplina">
+                    <h3>Diseño web</h3>
+                    <p>
+                        Maquetado con HTML, SCSS y Bootstrap, con foco en grillas responsivas,
+                        animaciones sutiles y sitios que se ven bien en cualquier pantalla.
+                    </p>
+                    <span class="disciplina__link">Ver proyecto →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJO EN PROCESO -->
+    <section class="seccion--clara">
+        <div class="contenedor">
+            <span class="etiqueta">Trabajo en proceso</span>
+            <h2 class="titulo-seccion">Una revista de heavy metal</h2>
+            <p class="intro-seccion">
+                Estoy desarrollando una revista sobre heavy metal nacional e internacional, con
+                novedades de bandas y próximos recitales. Estas son algunas de las ilustraciones
+                que ya tiene encaminadas.
+            </p>
+            <div class="revista-grid">
+                <img class="zoomable" src="img/revista/revista-1.jpg" alt="Retrato ilustrado de un cantante de heavy metal con lentes redondos y cruz plateada, para la revista en proceso">
+                <img class="zoomable" src="img/revista/revista-4.jpg" alt="Personaje demoníaco con guitarra eléctrica entre llamas, ilustración a color para la revista en proceso">
+            </div>
+            <div class="text-center mt-4">
+                <a href="paginas/ilustracion.html#trabajo-en-proceso" class="boton">Ver todo el avance <span class="boton__flecha">→</span></a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- pie de pagina -->
+<footer>
+    <div class="pie-grid">
+        <div class="pie-marca">
+            <span class="logotipo">Nahuel Ibarra</span>
+            <p>Ilustración y desarrollo frontend desde Buenos Aires.</p>
+        </div>
+        <div class="pie-columnas">
+            <div class="pie-columna">
+                <h3>Sitio</h3>
+                <ul>
+                    <li><a href="paginas/ilustracion.html">Ilustración</a></li>
+                    <li><a href="paginas/diseno-web.html">Diseño web</a></li>
+                    <li><a href="paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="pie-columna">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">© 2026 Nahuel Ibarra. Todas las ilustraciones son de autoría propia.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="scripts/lightbox.js"></script>
+</body>
+</html>

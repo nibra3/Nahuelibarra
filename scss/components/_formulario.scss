@@ -1,0 +1,92 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+.formulario-contacto {
+  max-width: 620px;
+
+  .campo {
+    margin-bottom: v.$espacio-medio;
+
+    label {
+      display: block;
+      font-family: v.$font-titulos;
+      font-size: 13px;
+      letter-spacing: .5px;
+      color: v.$color-hueso;
+      margin-bottom: 6px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      background-color: v.$color-tinta-suave;
+      border: 1px solid rgba(v.$color-hueso, .2);
+      border-radius: v.$radio-chico;
+      color: v.$color-hueso;
+      font-family: v.$font-principal;
+      font-size: 15px;
+      padding: 12px 14px;
+      transition: border-color .2s ease;
+
+      &:focus {
+        border-color: v.$color-brasa;
+        outline: none;
+      }
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+  }
+
+  .campo-fila {
+    @include m.flex($direccion: column, $espacio: v.$espacio-medio);
+
+    @include m.tablet {
+      flex-direction: row;
+
+      .campo {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.contacto-layout {
+  @include m.flex($direccion: column, $espacio: v.$espacio-xl);
+
+  @include m.desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contacto-info {
+  @include m.desktop {
+    flex: 0 0 32%;
+  }
+
+  h3 {
+    font-family: v.$font-titulos;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: v.$color-oro;
+    margin-bottom: 8px;
+    margin-top: v.$espacio-grande;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p, a {
+    color: v.$color-texto-suave;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  a:hover {
+    color: v.$color-brasa;
+  }
+}

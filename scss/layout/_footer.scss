@@ -1,0 +1,86 @@
+@use '../utilities/variables' as v;
+@use '../utilities/mixins' as m;
+
+footer {
+  background-color: v.$color-tinta-suave;
+  border-top: 1px solid rgba(v.$color-hueso, .08);
+  padding: v.$espacio-grande v.$espacio-medio v.$espacio-medio;
+
+  @include m.desktop {
+    padding: v.$espacio-grande v.$espacio-grande v.$espacio-medio;
+  }
+}
+
+.pie-grid {
+  @include m.flex($direccion: column, $espacio: v.$espacio-grande);
+  max-width: 1180px;
+  margin: 0 auto;
+
+  @include m.desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.pie-marca {
+  .logotipo {
+    font-family: v.$font-display;
+    color: v.$color-hueso;
+    font-size: 22px;
+  }
+
+  p {
+    color: v.$color-texto-suave;
+    font-size: 14px;
+    margin-top: v.$espacio-chico;
+    max-width: 32ch;
+  }
+}
+
+.pie-columna {
+  h3 {
+    font-family: v.$font-titulos;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: v.$color-oro;
+    margin-bottom: v.$espacio-chico;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  a {
+    color: v.$color-texto-suave;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color .2s ease;
+
+    &:hover,
+    &:focus {
+      color: v.$color-brasa;
+    }
+  }
+}
+
+.pie-columnas {
+  @include m.flex($direccion: column, $espacio: v.$espacio-grande);
+
+  @include m.tablet {
+    flex-direction: row;
+    gap: v.$espacio-xl;
+  }
+}
+
+.copyright {
+  max-width: 1180px;
+  margin: v.$espacio-grande auto 0;
+  padding-top: v.$espacio-medio;
+  border-top: 1px solid rgba(v.$color-hueso, .08);
+  color: #665f48;
+  font-size: 13px;
+}

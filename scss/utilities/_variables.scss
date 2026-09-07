@@ -1,0 +1,27 @@
+// Tipografías
+$font-titulos: 'Oswald', sans-serif;      // titulares y navegación (viene de El Visitante)
+$font-display: 'Metal Mania', cursive;    // logotipo y apertura de página, uso puntual
+$font-principal: 'Inter', Helvetica, Arial, sans-serif; // cuerpo de texto
+
+// Paleta
+$color-tinta: #14110b;        // negro cálido, tinta / fondo principal
+$color-tinta-suave: #1d1912;  // paneles sobre tinta
+$color-hueso: #e9e3c9;        // hueso / papel, fondo claro
+$color-hueso-suave: #f4f0df;  // hueso claro, tarjetas sobre tinta
+$color-sangre: #7a1220;       // rojo sangre oscuro, acento principal
+$color-brasa: #d94f1e;        // naranja brasa, hover / llamada a la acción
+$color-musgo: #7c8354;        // verde musgo, acento secundario
+$color-oro: #c99a2e;          // dorado envejecido, detalle "trabajo en proceso"
+$color-texto-suave: #8f8a76;  // gris cálido para texto secundario sobre tinta
+$color-texto-oscuro: #211c12; // texto sobre fondos claros
+
+$radio-chico: 3px;
+$radio-medio: 6px;
+
+$espacio-chico: 8px;
+$espacio-medio: 20px;
+$espacio-grande: 48px;
+$espacio-xl: 88px;
+
+$punto-tablet: 768px;
+$punto-escritorio: 1080px;

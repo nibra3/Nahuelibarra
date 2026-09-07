@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño web | Nahuel Ibarra</title>
+    <meta name="description" content="Trabajo de desarrollo frontend de Nahuel Ibarra: maquetado con HTML, SCSS y Bootstrap, con el proyecto El Visitante como caso principal.">
+    <link rel="icon" type="image/png" href="../img/ilustracion/mascara-eddie.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<a class="salto-contenido" href="#contenido">Ir al contenido</a>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-column lh-1" href="../index.html">
+                <span class="brand-nombre logotipo">Nahuel Ibarra</span>
+                <span class="brand-rol">ILUSTRACIÓN &amp; DISEÑO WEB</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilustracion.html">Ilustración</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="diseno-web.html">Diseño web</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main id="contenido">
+
+    <section class="hero" style="padding-bottom: 0;">
+        <div class="contenedor" style="display:block;">
+            <span class="etiqueta">Diseño web</span>
+            <h1 class="titulo-seccion" style="max-width: 26ch; font-size: 38px;">Maquetado prolijo, responsivo y sin vueltas</h1>
+            <p class="intro-seccion" style="max-width: 62ch;">
+                Me estoy formando como desarrollador frontend en la Facultad de Diseño y Comunicación
+                de la Universidad de Palermo. Trabajo con HTML semántico, SCSS organizado en partials
+                y Bootstrap como base de grilla, siempre apuntando a que el sitio se vea bien tanto
+                en un celular como en un monitor grande.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROYECTO: EL VISITANTE -->
+    <section>
+        <div class="contenedor">
+            <span class="etiqueta">Proyecto</span>
+            <h2 class="titulo-seccion">El Visitante</h2>
+
+            <div class="proyecto">
+                <div class="proyecto__visual">
+                    <img class="zoomable" src="../img/site/el-visitante-logo.png" alt="Logo de El Visitante: un vinilo deformado en trazo rojo sobre fondo claro">
+                </div>
+                <div class="proyecto__cuerpo">
+                    <span class="proyecto__rol">Tienda ficticia de rock y metal · Trabajo de cátedra</span>
+                    <h3>Una tienda de vinilos, CDs e instrumentos</h3>
+                    <p>
+                        El Visitante es una tienda ficticia de rock y metal en Argentina, con catálogo
+                        de vinilos y combos, página de instrumentos, promoción de recitales y un
+                        formulario de registro. Es el proyecto donde más practiqué grilla responsiva,
+                        SCSS avanzado y animaciones al hacer scroll.
+                    </p>
+                    <ul class="stack">
+                        <li>HTML semántico</li>
+                        <li>SCSS (partials)</li>
+                        <li>Bootstrap 5</li>
+                        <li>CSS Grid &amp; Flexbox</li>
+                        <li>AOS (animaciones)</li>
+                    </ul>
+                    <ul class="tareas-lista">
+                        <li>Cinco páginas: inicio, vinilos, instrumentos, recitales y nosotros</li>
+                        <li>Mixins parametrizados y placeholders con <code>@extend</code> para tarjetas y sombras</li>
+                        <li>Responsive completo con breakpoints de tablet y escritorio</li>
+                    </ul>
+                    <div class="proyecto__acciones">
+                        <a href="https://github.com/nibra3/el-visitante" target="_blank" rel="noopener" class="boton boton--relleno">Ver repositorio <span class="boton__flecha">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO TRABAJO -->
+    <section class="seccion--clara">
+        <div class="contenedor">
+            <span class="etiqueta">Cómo trabajo</span>
+            <h2 class="titulo-seccion">De boceto de maquetado a sitio responsivo</h2>
+            <p class="intro-seccion">
+                Prefiero entender por qué funciona una propiedad de CSS antes de aplicarla, así que
+                voy probando cada solución en el navegador en vez de darla por buena de una.
+            </p>
+            <div class="disciplinas">
+                <div class="disciplina">
+                    <h3>Estructura primero</h3>
+                    <p>HTML semántico y accesible antes de pensar en un solo estilo.</p>
+                </div>
+                <div class="disciplina">
+                    <h3>SCSS organizado</h3>
+                    <p>Variables, mixins y partials separados por capa: base, layout y componentes.</p>
+                </div>
+                <div class="disciplina">
+                    <h3>Mobile y desktop</h3>
+                    <p>Cada sección se prueba en los dos extremos, no solo en el tamaño de escritorio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cierre-cta">
+        <div class="contenedor">
+            <span class="etiqueta">¿Necesitás un sitio?</span>
+            <h2 class="titulo-seccion" style="margin-left:auto; margin-right:auto;">Contame en qué estás pensando</h2>
+            <a href="contacto.html" class="boton boton--relleno">Escribime <span class="boton__flecha">→</span></a>
+        </div>
+    </section>
+
+</main>
+
+<!-- pie de pagina -->
+<footer>
+    <div class="pie-grid">
+        <div class="pie-marca">
+            <span class="logotipo">Nahuel Ibarra</span>
+            <p>Ilustración y desarrollo frontend desde Buenos Aires.</p>
+        </div>
+        <div class="pie-columnas">
+            <div class="pie-columna">
+                <h3>Sitio</h3>
+                <ul>
+                    <li><a href="ilustracion.html">Ilustración</a></li>
+                    <li><a href="diseno-web.html">Diseño web</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="pie-columna">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://github.com/nibra3" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">© 2026 Nahuel Ibarra. Todas las ilustraciones son de autoría propia.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="../scripts/lightbox.js"></script>
+</body>
+</html>

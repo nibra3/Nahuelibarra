@@ -1,0 +1,56 @@
+@use '../utilities/variables' as v;
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: v.$font-titulos;
+  font-size: 15px;
+  letter-spacing: .3px;
+  text-decoration: none;
+  padding: 12px 22px;
+  border: 1px solid v.$color-hueso;
+  border-radius: v.$radio-chico;
+  color: v.$color-hueso;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: v.$color-brasa;
+    border-color: v.$color-brasa;
+    color: v.$color-hueso;
+  }
+}
+
+.boton--relleno {
+  background-color: v.$color-sangre;
+  border-color: v.$color-sangre;
+
+  &:hover,
+  &:focus {
+    background-color: v.$color-brasa;
+    border-color: v.$color-brasa;
+  }
+}
+
+.seccion--clara .boton {
+  border-color: v.$color-texto-oscuro;
+  color: v.$color-texto-oscuro;
+
+  &:hover,
+  &:focus {
+    background-color: v.$color-sangre;
+    border-color: v.$color-sangre;
+    color: v.$color-hueso;
+  }
+}
+
+.boton__flecha {
+  transition: transform .2s ease;
+}
+
+.boton:hover .boton__flecha {
+  transform: translateX(3px);
+}
