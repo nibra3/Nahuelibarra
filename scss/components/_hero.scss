@@ -23,7 +23,7 @@
 
 .hero__texto {
   @include m.desktop {
-    flex: 0 0 46%;
+    flex: 0 0 52%;
   }
 }
 
@@ -33,13 +33,14 @@
   font-size: 42px;
   line-height: 1.05;
   margin-bottom: 6px;
+  white-space: nowrap;
 
   @include m.tablet {
     font-size: 54px;
   }
 
   @include m.desktop {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 
@@ -69,7 +70,7 @@
   position: relative;
 
   @include m.desktop {
-    flex: 0 0 46%;
+    flex: 0 0 40%;
   }
 
   .marco {

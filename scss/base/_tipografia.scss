@@ -1,6 +1,6 @@
 @use '../utilities/variables' as v;
 
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Unbounded:wght@400;500;600;700&display=swap');
 
 body {
   font-family: v.$font-principal;
@@ -26,4 +26,9 @@ a {
 .logotipo {
   font-family: v.$font-display;
   letter-spacing: .5px;
+}
+
+.brand-nombre.logotipo,
+.hero__nombre.logotipo {
+  font-family: 'Unbounded', cursive;
 }
