@@ -29,6 +29,7 @@ a {
 }
 
 .brand-nombre.logotipo,
-.hero__nombre.logotipo {
-  font-family: 'Unbounded', cursive;
+.hero__nombre.logotipo,
+.pie-marca .logotipo {
+  font-family: v.$font-logo;
 }

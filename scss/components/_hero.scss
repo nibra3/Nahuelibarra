@@ -30,14 +30,12 @@
 .hero__nombre {
   font-family: v.$font-display;
   color: v.$color-hueso;
-  font-size: 42px;
+  // Tamaño fluido: escala con el ancho de pantalla para que el nombre
+  // entre completo en una línea, de celulares chicos hasta tablet.
+  font-size: clamp(24px, 7.6vw, 54px);
   line-height: 1.05;
   margin-bottom: 6px;
   white-space: nowrap;
-
-  @include m.tablet {
-    font-size: 54px;
-  }
 
   @include m.desktop {
     font-size: 48px;
